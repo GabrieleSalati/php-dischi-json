@@ -1,0 +1,17 @@
+header {
+    background-color: #11171d;
+    text-align: center;
+}
+
+body {
+    background-color: #1d2d3c;
+}
+
+.card {
+    background-color: #112030;
+}
+
+.card-text,
+h1 {
+    color: white;
+}

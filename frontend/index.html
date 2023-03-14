@@ -32,14 +32,21 @@
 
 <body>
     <div id="app">
+        <header>
+            <h1 class="py-5">RECORD SHOP</h1>
+        </header>
         <div class="container">
-            <div class="card" v-for="record in records">
-                <img :src="record.poster" alt="poster">
-                <div class="card-body">
-                    <h5 class="card-title">{{record.title}}</h5>
-                    <p>{{record.author}}</p>
-                    <p>{{record.year}}</p>
-                    <p>{{record.genre}}</p>
+            <div class="row">
+                <div class="col col-2">
+                    <div class="card" v-for="record in records">
+                        <img :src="record.poster" alt="poster">
+                        <div class="card-body">
+                            <h5 class="card-title card-text">{{record.title}}</h5>
+                            <p class="card-text">{{record.author}}</p>
+                            <p class="card-text">{{record.year}}</p>
+                            <p class="card-text">{{record.genre}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

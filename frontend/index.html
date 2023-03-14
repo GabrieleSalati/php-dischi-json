@@ -38,8 +38,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-4" v-for="record in records">
-                    <div class="card">
-                        <img :src="record.poster" alt="poster">
+                    <div class="card my-4">
+                        <img class="align-self-center py-2" :src="record.poster" alt="poster">
                         <div class="card-body">
                             <h5 class="card-title card-text">{{record.title}}</h5>
                             <p class="card-text">{{record.author}}</p>

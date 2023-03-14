@@ -7,8 +7,17 @@ body {
     background-color: #1d2d3c;
 }
 
+img {
+    height: 70%;
+    width: 70%;
+}
+
 .card {
     background-color: #112030;
+}
+
+.card-body {
+    text-align: center;
 }
 
 .card-text,

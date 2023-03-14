@@ -32,9 +32,17 @@
 
 <body>
     <div id="app">
-        <ul v-for="record in records">
-            <li>{{record.title}}</li>
-        </ul>
+        <div class="container">
+            <div class="card" v-for="record in records">
+                <img :src="record.poster" alt="poster">
+                <div class="card-body">
+                    <h5 class="card-title">{{record.title}}</h5>
+                    <p>{{record.author}}</p>
+                    <p>{{record.year}}</p>
+                    <p>{{record.genre}}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
